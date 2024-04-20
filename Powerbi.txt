@@ -178,17 +178,28 @@ A dataflow is a collection of tables that are created and managed in workspaces 
 
 Components of Power BI
 Power Query 
-Power Query is the data transformation and mash up the engine. It enables you to discover, connect, combine, and refine data sources to meet your analysis need. It can be downloaded as an add-in for Excel or can be used as part of the Power BI Desktop.
+Power Query is the data transformation and mash up the engine. 
+It enables you to discover, connect, combine, and refine data sources to meet your analysis need. 
+It can be downloaded as an add-in for Excel or can be used as part of the Power BI Desktop.
 Power Pivot 
-Power Pivot is a data modeling technique that lets you create data models, establish relationships, and create calculations. It uses Data Analysis Expression (DAX) language to model simple and complex data.
+Power Pivot is a data modeling technique that lets you create data models, establish relationships, and create calculations. 
+It uses Data Analysis Expression (DAX) language to model simple and complex data.
 Power View 
-Power View is a technology that is available in Excel, Sharepoint, SQL Server, and Power BI. It lets you create interactive charts, graphs, maps, and other visuals that bring your data to life. It can connect to data sources and filter data for each data visualization element or the entire report.
+Power View is a technology that is available in Excel, Sharepoint, SQL Server, and Power BI. 
+It lets you create interactive charts, graphs, maps, and other visuals that bring your data to life. 
+It can connect to data sources and filter data for each data visualization element or the entire report.
 Power Map 
-Microsoft's Power Map for Excel and Power BI is a 3-D data visualization tool that lets you map your data and plot more than a million rows of data visually on Bing maps in 3-D format from an Excel table or Data Model in Excel. Power Map works with Bing maps to get the best visualization based on latitude, longitude, or country, state, city, and street address information.
+Microsoft's Power Map for Excel and 
+Power BI is a 3-D data visualization tool that lets you map your data and plot more than a million rows of data visually on 
+Bing maps in 3-D format from an Excel table or Data Model in Excel. Power Map works with Bing maps to get the best visualization based 
+on latitude, longitude, or country, state, city, and street address information.
 Power BI Desktop 
-Power BI Desktop is a development tool for Power Query, Power Pivot, and Power View. With Power BI Desktop, you have everything under the same solution, and it is easier to develop BI and data analysis experience.
+Power BI Desktop is a development tool for Power Query, Power Pivot, and Power View. 
+With Power BI Desktop, you have everything under the same solution, and it is easier to develop BI and data analysis experience.
 Power Q&A
-The Q&A feature in Power BI lets you explore your data in your own words. It is the fastest way to get an answer from your data using natural language. An example could be what was the total sales last year? Once you've built your data model and deployed that into the Power BI website, then you can ask questions and get answers quickly.
+The Q&A feature in Power BI lets you explore your data in your own words. It is the fastest way to get an answer from your data using natural language. 
+An example could be what was the total sales last year? Once you've built your data model and deployed that into the Power BI website,
+ then you can ask questions and get answers quickly.
 Now, let's dive into understanding the Power BI features.
 
 Following are some of the features of Power BI -
@@ -216,10 +227,13 @@ Power BI services refer to the cloud services that are used to publish Power BI 
 Using Power BI mobile apps, you can stay connected to their data from anywhere. Power BI apps are available for Windows, iOS, and Android platforms.
 
 Power BI Service
-Power BI service is the Software as a Service (SaaS) part of Power BI. It is also known as Power BI Online. To access Power BI Service, you need to log in to Power BI service. 
+Power BI service is the Software as a Service (SaaS) part of Power BI. It is also known as Power BI Online. 
+To access Power BI Service, you need to log in to Power BI service. 
 
 Power BI Dashboard
-Power BI Dashboard is a single page visualization to tell a story. The visualizations on a dashboard are generated from reports, and each report is based on one dataset. A single page dashboard is known as a Canvas. Below is a Finance Dashboard published on Power BI Service.
+Power BI Dashboard is a single page visualization to tell a story. 
+The visualizations on a dashboard are generated from reports, and each report is based on one dataset. 
+A single page dashboard is known as a Canvas. Below is a Finance Dashboard published on Power BI Service.
 
 dashboard
 
@@ -227,7 +241,9 @@ The visualizations you see on the dashboard are called Tiles and are pinned to t
 
 dashboard-2
 
-Power BI allows you to create different reports on Power BI Desktop. These reports can be published on the Power BI dashboard using the Power BI service. A Power BI report created on Power BI Desktop can be published on to Power BI Service by clicking on the Publish button. 
+Power BI allows you to create different reports on Power BI Desktop.
+ These reports can be published on the Power BI dashboard using the Power BI service.
+ A Power BI report created on Power BI Desktop can be published on to Power BI Service by clicking on the Publish button. 
 
 
 
@@ -304,7 +320,7 @@ SO do closeand apply
 
  Using Query Parameters
 
-Super-retailer---- AV
+Super-retailer---- AV---------------------------------------------------------------------------------------AV---------------------------
 
 Fact Table--- load----------- rename by clicking fields on right--- Sales table
 
@@ -369,12 +385,16 @@ U can also export into power point excel or a pdf-- lets say pdf-- then pdf crea
 
 Power bi service can be use to create dashboards and interact with them so that it can be distributred as an application and can be viewed in ur mobile phones
 
+#----------------------------------------------------------------------
 
 Data modelling and using power bi to deal with multiple data sources---
 
-Data model consist of either 1 dataset or multiple datasets. It also tells relationships and apply some formulas which tells the business rules to extract business insights.
+Data model consist of either 1 dataset or multiple datasets.
+ It also tells relationships and apply some formulas which tells the business rules to extract business insights.
 
-The schema is the skeleton of ur data.The simplest is the star schema. It consist of a fact table that records events such as sales orders,prices, etc. A fact table contains repeated values. The dimension table contains details about the data
+The schema is the skeleton of ur data.The simplest is the star schema. 
+It consist of a fact table that records events such as sales orders,prices, etc. 
+A fact table contains repeated values. The dimension table contains details about the data
 Fact tables are usually much larger than the dimension tables . The schema helps in creating and maintaining the reports.
 
 Relationships and cardinality--
@@ -393,7 +413,8 @@ Next moving to model tab or relationship tab--
 
 NOw for understanding, lets first delete the relationship.
 
-The common cols in each pair of table are called as keys. The primary key for regions table can be post code because it seems unique and not null. PK for sales table ? NOt available.
+The common cols in each pair of table are called as keys. 
+The primary key for regions table can be post code because it seems unique and not null. PK for sales table ? NOt available.
 Now we will create the relationship on common cols.
 1-to-many is cardinality-- i.e post code col in regions has unique values which may or may not be repeated in sales cols.
 Other cardinalities are 1-1, many-many, many-1.
@@ -403,9 +424,10 @@ By inserting slicers and creating reports u will get the clear picture.
 
 Now, going to reports view, inserting slicer
 
-So getting state wise units sold-- insert slicer--- put states col in field-- now the slicer build on regions table can be used to filter rows from sales. This happens becuase of reltionship direction. 
+So getting state wise units sold-- insert slicer--- put states col in field-- 
+now the slicer build on regions table can be used to filter rows from sales. This happens becuase of reltionship direction. 
 
-U can see managers, buyers and date tables to check if power bi is able to establish the relationship.
+U can load from super_retailer managers, buyers and date tables to check if power bi is able to establish the relationship.
 
 Managers table gets related to regions table.
 This type of schema is generally referred to as a snow flake schema. But deleting this relationship to create a star schema as it is much easier to understand. 
@@ -424,7 +446,13 @@ We have some missing piece of info in our sales table like monitary value of goo
 
 SO 1st filling up these info before working with all the datastes.
 
-We will create these variables by calculating new cols in the sales table. These are excel like formulas, commonly called as DAX, To create calculated col using DAX, Go to the data view, click on sales table---  go to table tools---- new col---  creating a new col is available as both table tools and column tools-- u can use any -- u can also do this by right click on fields--sales table--
+We will create these variables by calculating new cols in the sales table. 
+These are excel like formulas, commonly called as DAX, 
+To create calculated col using DAX, Go to the data view, 
+click on sales table---  go to table tools---- new col---  creating a new col is available as both table tools and column tools-- u can use any -- 
+u can also do this by right click on fields--sales table--
+
+
  Now, instead of excel which performs cell by cell calc of formulas and requires dragging the formula, powerbi doesnot do so. It does on col level.
 
 Revenue='Sales Table'[Sale Price]* 'Sales Table'[Total Units]
@@ -455,7 +483,8 @@ Area chart give date vise revenue.
 
 Now, removing revenue from target and we get grey color again.
 
-Next we will include a line and clustered col chart. In this chart we would show how a revenue and profit chart looks like over the financial quarters from quarters 2016 Q3 to 2018Q1.
+Next we will include a line and clustered col chart. 
+In this chart we would show how a revenue and profit chart looks like over the financial quarters from quarters 2016 Q3 to 2018Q1.
 
 Click on Dates--FY Qtr-- X-axis
 col y-axis-- sum of revenue
@@ -469,7 +498,7 @@ In this we will see distribution of revenue by chain. legend-- chain , values-- 
 
 visual-- colors-- u can choose any colors.
 
-Next is a map or a field map-- 
+Next is a map or a field map--  on regions table
 location -- state code
 Now we dont have any latitude and lonitude field so we will keep it blank.
 Now, in the regions table we will ask power bi to pick states from australia.
@@ -484,12 +513,13 @@ What field should we base on--- sales table--- revenue---- set min colr to red a
 
 Now in the tool tips--put revenue-- so when we hover over the areas we get revenue.
 
-NOw, including a column chart-- to show the distribution of units by category. y-axis-- category , x-axis-- total units
+NOw, including a column chart-- to show the distribution of units by category. x-axis-- category , y-axis-- total units
 Now, we will use the color of the bar so that we can utilize another dimension to see how the contributors of quantity goes with the revenue.
 
 So, coloring the bars using the function of revenue-- foramat-- visual-- bars-- colors-- function-- sale[revenue]--- same diverging colors as map-- ok
 
-Home category sells the most. Mens category and shoes are the biggest contributors to the revenue. So we can target these two categories to increase revenue. In contrast, to increase market presence they can focus on the home category.
+Home category sells the most. Mens category and shoes are the biggest contributors to the revenue. So we can target these two categories to increase revenue. 
+In contrast, to increase market presence they can focus on the home category.
 
 Finally we will include a couple of card visualizations to dispaly what is the total revenue and the profit earned over the period of time.
 
@@ -551,14 +581,16 @@ i.e. for any detail that u want, sum up the profit and then divide by sum of rev
 Now, even if u goto data view, nothing has been created.
 
 So going to report view and place another card
-with the margin % and place it right at the top along with the profit and revenue. This value requires a bit of formatting, so we will click on the measure margin %  ---- and under the measure tools ribbion we will click on %.
+with the margin % and place it right at the top along with the profit and revenue. This value requires a bit of formatting, 
+so we will click on the measure margin %  ---- and under the measure tools ribbion we will click on %.
 
 Now insert a new card and put margin% in that in the report view.
 
 Next, go to a new report page and include a table. So-- visualization-- table
 columns-- category, margin%
 
-Now lets sort the data based on descending order of margin%-- for sorting just click on margin.  Accessories is the highest margin% for the business. Lowest one is groceries.
+Now lets sort the data based on descending order of margin%-- for sorting just click on margin.  
+Accessories is the highest margin% for the business. Lowest one is groceries.
 
 Infact, highest selling category i.e. home has a low margin% of 34% compared to the overall avg of the business that stands around 45%.
 
@@ -566,7 +598,9 @@ U can create measures for profit and revenue and call them profit measure and re
 
 Now, using formula to create row by row operations---
 
-Measures are fields that aggregate over the context specified. However if u try to create a measure for lets say revenue and write formula total units * sales price --- power bi will not let us write this and give error becuse there is no aggregation operation that is taking place.
+Measures are fields that aggregate over the context specified. 
+However if u try to create a measure for lets say revenue and write formula total units * sales price --- 
+power bi will not let us write this and give error becuse there is no aggregation operation that is taking place.
 
 Alternatively if u use a formula like -
 revenue measure = sum('Sales Table'[Total Units]) * sum('Sales Table'[Sale Price])---- but this will not be correct--- u can check this by keeping a revenue and revenue measure field on the visualized table.
@@ -581,8 +615,11 @@ revenue measure = SUMX('Sales Table','Sales Table'[Total Units]*'Sales Table'[Sa
 BUt revenue and revenue measure both are giving same distribution as we can see in table. SO which one to use? MEasures take up less memory.
 SO when size of data is large, it does matter.
 
-If u r categorizing say text or numbers, binning the ages into 0-18,19-36,etc that needs to be operated on a row by row fashion then u have to use a calculated col and not measure.
-but for calc % or ratios at any level of detail, u need to use measures strictly like sumx and other mathematical op can also be performed on a row by row fashion with the help of countx, maxx etc.  Sow for rob by row -- we need SumX and all formula.
+If u r categorizing say text or numbers, binning the ages into 0-18,19-36,etc that needs to be operated on a row by row fashion then u have to use a 
+calculated col and not measure.
+but for calc % or ratios at any level of detail, 
+u need to use measures strictly like sumx and other mathematical op can also be performed on a row by row fashion with the help of countx, maxx etc.  
+Sow for rob by row -- we need SumX and all formula.
 
 
 Growth rate for the same period last year and difference between targets and goals achieved.
@@ -601,7 +638,8 @@ Now our target will be 1% higher than the last month. Tf we will use claculate f
 
 target revenue = CALCULATE([revenue measure],PREVIOUSMONTH(Dates[Date]))*1.05
 
-Now go to overall summary page. In the sum pf revenue kpi field's target put target revenue-- and u will see it turned green telling the reuslts are good and exceedde the information.
+Now go to overall summary page. In the sum pf revenue kpi field's target put target revenue-- 
+and u will see it turned green telling the reuslts are good and exceedde the information.
 
 Now, calculating revenue variance-- which is the difference between the difference between target revenue and the realized revenue.
 
@@ -632,13 +670,15 @@ The business exceede the target revenue by $1.5 Million.
 Time intelligence functions---
 previous month we saw KPI year to date or quarter to date indicators YTD or QTD need time intelligent functions.
 
-Stakeholders works with target earnings in mind.And they want to compare how there year have progressed so far. Are we on track or do we need more aggressive strategies to bring business on track.
+Stakeholders works with target earnings in mind.And they want to compare how there year have progressed so far.
+ Are we on track or do we need more aggressive strategies to bring business on track.
 
 create a new visualization page-- put date in cols and revenue measure.
 
 on 2016 qtr 1 march 1 $272510186 is the running total of jan feb and march.
 
-Thought ytd refers to running total, but ytd resets itself whenever the year changes. So to calc the ytd indicator, we will create a new measure call it revenue ytd and will use totalytd fun of powerbi.
+Thought ytd refers to running total, but ytd resets itself whenever the year changes. 
+So to calc the ytd indicator, we will create a new measure call it revenue ytd and will use totalytd fun of powerbi.
 
 So, new measure-- revenue ytd--
 
@@ -813,12 +853,16 @@ Got power bi service--download-- gateway-- download personal mode---
 Power query-------
 
 ETL tool for power bi-- Extract transform and load
-Extract data from single or multiple sources---> transform data to make it ingestible for analysis-- this is where power query transformations options come in--it keeps track of all the steps performed before making it handy--- then we load data in power bi tables to create data model---
+Extract data from single or multiple sources---> transform data to make it ingestible for analysis-- 
+this is where power query transformations options come in--it keeps track of all the steps performed before making it handy--- 
+then we load data in power bi tables to create data model---
 
 https://www.rbi.org.in/Scripts/ATMView.aspx?atmid=146  --- march 2021
 --- click on the excel button on the webpage to download this file.
 
-In the downloaded file there are alot of blank spaces around the table. Some of the cols are merged and there are few rows  that contains sub totals and even the totals of the previous rows. There is further info about the data right at the end of the rows which we donot require. This is only for developing and understanding of data.
+In the downloaded file there are alot of blank spaces around the table. 
+Some of the cols are merged and there are few rows  that contains sub totals and even the totals of the previous rows. 
+There is further info about the data right at the end of the rows which we donot require. This is only for developing and understanding of data.
 
 march 2021 excel file--- transform---
 Now u will see some applied steps -- which are performed by power bi-- click on cross on last 2 transformations.
@@ -857,4 +901,747 @@ U can even use power query to merge datasets, combine queries and infact create 
 
 Using power query to manipulate data---
 Power query is an inbuild etl tool in power bi which is used to clean and transform the data.
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx-- powerbi notes--- itv -- online---XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+ETL def in power bi--
+extract transform load.
+
+extract data from multiple sources,
+clean or transform data
+and then loading the transformed data to visualize data using charts and build dashboard.
+
+Power bi components--
+power pivot is where we r storing our data and develop a relationship between datasets.
+
+For ege we can extract data from different sources like sales,customer, product, with the help of power pivot merge them inot 1 table.
+
+Power query is for cleaning and transforming data
+eg merge cols, drop cols split cols etc.
+
+Power view -- area where we create charts and dashboard
+
+power map-- for showing geographical data.
+
+Power bi desktop contains above all.
+
+Power Q & A-- eg plot column chart b/w sales and product
+and the chart will be created.
+
+Power view-- the first page after welcome is power view.
+
+power query u get by clicking transform data.
+
+Power bi architecture is based on ETL.
+See power bi architecture slide in ppt.
+
+Data integration is mostly related to extracting data 
+from multiple sources and storing it in 1 place.
+Data Preprocessing i.e. data transformation
+and data presentation.
+
+Data -- car sale, car details, car supply mgmt, sample superstore
+
+get data-->
+there are diff sources to upload adta from.
+-- US regionalsale data.xlsx
+
+So whatever sheets are present in mu excel workbook they all i will see.
+
+lets say selecting top 6 tables,
+Now we have 2 options. We can load data directly or transform data and then load.
+
+So for no load.
+
+Explore the loaded table.
+In the table view u will see the tables.
+
+Model view-- see the relationships in the dataset.
+
+Now loading data from csv files--
+get data-->text/csv--> car details-->load
+
+Goto model view and see car and sales have no relationship.
+
+get data-->web--> wikipedai sachin tendulkar-->ok
+different tables-->runs wins tendulkar's international centuries -- load
+
+model view-->see-- we can even establish relationships. We can change col name to transform col name.
+
+If u want to load data from transform tab-->then--> new source--> and load data.
+
+Now if u want to transform directly and not load--> then close power bi--> start-->transform--> text/csv--> car details v3--> loading
+
+load another 2-->car sales--> ok
+load-->car supply chain mgmt-->ok
+
+Queries tab show the different data or tables available.
+
+Next to query tab is a table view portion.
+Where u can see columns and rows in a table.
+
+Then, query settings contain properties and applied steps.
+
+From properties change the name to Car_SupplyChainManagement
+
+the name of the table will be changed and u will also see in applied steps.
+
+Then u have ribbion on top and different tabs on it.
+
+I u dont want to see formula bar -- untick it
+tick column quantity and see.-- it is telling about valid data +nt, error and empty data.
+
+This 3rd table contains all valid data,
+but if u will see car details, it has empty rows.
+
+we generraly spend time in home, transform and add column tab.
+
+Next we need to transform our data which is a power query editor.
+
+
+In car sales we have more empty data.
+
+In car sales we have empty data.
+
+So null values we either drop or impute i.e. fill with some data.
+
+So our goal is to make data ready for visualization.
+
+click car sales-- 
+now in the applied steps u can see . pbi has already performed some data manipulation. I f
+u want u can remove those steps.
+
+Cancel those steps and u see ure raw data.
+Home tab-->use first row as headers.
+here it is applying datatype according to data 
+the column contains.
+
+See the ppt-- analysis using query editor.
+
+Clean and transform are some steps that we apply.
+
+1. merging cols into one-->we have transform tab and add column tab which have
+some common options. The difference bet them is 
+if we r doing it through transform col, then that col will change but in add col section new col is added at the end of the table.
+
+Merge col-- select atleast 2 cols
+
+so transform tab-->select 1st 2 cols of --> 
+merge cols (near format ABC)-- give seperator-->
+i can select from given seperators, or
+i can add custom eg underscore,--> then new col name-->Manufacturer_Model
+
+Now both the 2 cols are gone and new col appeared.
+If u want to go back then from applied steps ->remove this step--
+
+so next we will do same with add col option--
+See at the end new col has been added.
+
+remove this step.
+
+Next is splitting cols-->
+
+home tab-->split cols--
+
+click 3rd table-->car suppply-->supplier contavct details-->by delimiter-->each occurence--ok
+
+remove the steps then.
+
+Next is renaming col--> so right click SupplierName col-->name-->ok
+ U can even double click and rename it.
+
+Change datatype-- car price-- fixed decimal,decimal u can change.
+
+U can rename table by right click or from query seetings .
+
+car sale-->__year_resale_value--> remove underscore-->enter
+
+Theres no way to bring the cancelled step from applied steps. U will have to do the proces again.
+
+
+removing null values-- remove or impute.
+
+Now cars sale-->year_resale_value--> 23% empty data-->which is alot. --> dropdown-->remove empty
+
+cancel this step
+
+So now seeing imputing--> year_resale_value
+--> dropdown--> select nulls-->now right click on any null-->replace values-->since its datatype is deciaml
+--> so 0.0--ok
+
+for text u can put NA
+removing duplicate values
+
+now what we can see is only replaced data.
+so what u can do is in applied steps drag replaced value and put it before filterd rows-->
+remove filterd row step.
+
+or u can directly right click on null value in a col-- replace with 0.0--ok and all the values will be replaced.
+
+for single data change u need to go back to excel remove their.
+
+then  go to car details v3-->engine-->blank cell-->
+right click--> NA
+
+Same with mileage col-->replace with 0.0 kmpl
+Or u can write NA.-->NA
+
+Now removing duplicates--> consider complete table--> see complete row to check for duplicates.
+
+So for selecting complet table--> 1st click 1 col--> then do ctrl+A
+now right click on any col--> remove duplicates.
+
+same for car sale
+
+Next is merging--
+like left join, right join, inner join, full outer join.
+
+1 common col is required.
+
+If common col is not there then merging is not possible.
+
+In home tab we have merge quer and append query.
+
+Select car sale-->append queries-->now in dropdown there are 2 options in append query-->
+in car sales table only changes will be applied.
+So, click on append query--->car details v3-->
+Now scroll to end-- wherever values are not there-->null
+
+Now tryiong merge query as new--
+click on car supply-->merge queries as new-->car sale-->same col--in car supply we have car maker
+and in car sale we have manufacturer--> their values are same-->so from both tables click on these cols.--> inner join--> ok
+So the matching values will come as output in merge1.
+
+Now adding add columns--
+
+1. col from example--> from selection--> click supplier addr and supplier name, car maker--> write in a cell Dodge-542 Dayton Center-Bubbletube-- enter--ok now this col is added.
+
+next cancel --col from egs from all cols-->and write some values from some cols --> ok
+
+Next custom cols--car sale-->new col name--> sales per price--> double click sales_in thousands--[Sales_in_thousands]/[Price_in_thousands]-->ok
+
+next is invoke custom func--> here u can write ur 
+own custom func and apply it on ur own col-->
+So before using this functionality u will write some func--> so right click on query tab--> new query--> blank query--> = (sales as number,price as number) => sales+price
+
+now our func is created--> now click car sale-->
+invoke custom func-->new col name--> addition-->query1--> here u can give col or a particular value-->put 10, 20--> so our o/pis 30.
+
+u can even add cols-- sales in thousand, price in thousand.
+
+then we will see about conditional col, index col and duplicate col.
+
+1. Duplicate cols--
+
+lets say car details-->year--> duplicate col-->at the end new col year_copy will 
+be created --> rename it to-->year1 or something.
+
+Next is index col--> 2 options from 0 or 1-->
+for 0 1st row will be 0, 2nd 1...
+for 1 1st row will be 1, 2nd 2....
+
+so this can also server as unique col or primary key.
+
+just click index col--> from 1
+
+conditional col-->so it is based on some conditions.
+--> car sales--> manufactures--> we can have some condition like
+if manufactureer name is accura give me 20 somrthing like that.
+
+if--> col name--> manufacturer-->operator equals-->
+value Acura-->then o/p 20--> add clause-->
+Manufacturer--> equls to--> BMW-->50-- add clause--
+Manufacturer--> equls to--> Audi-->100
+
+else 150--ok
+we can keep the col name as New Manufacturer Limit
+
+Here u can also o/p a col based on condition--
+so conditional col-->
+Manufacturer--> equls to--> BMW-->clcik dropdown on o/p-->
+select a col--> col name Latest_Launch-->
+and for else I want anothe col-->HorsePower
+
+So here what will happen , wherever manyfacturer is BMW,
+the value will be coming from Latest Launch, otherwise 
+from horsepower.
+
+Now few other functionalities present in add col--
+next to format--> extract 
+so click on manufacturer--> extract-->lenght--> we have new col at the end.
+
+Now removing all these steps.
+
+then format option is also ther--> manufacturer--> 
+format--> upper case--> new col addded
+
+fuel capacity--> scientific
+-->square-->new col
+
+Now cancel all the steps. WE will exit our power query edior now.
+
+home--> close and apply-->then whatever will be present in query tab
+will be present there.-->
+
+If u dont want to load everything then right click on name in query editor-->
+untick enable load option. And that will not be loaded in 
+power bi desktop.
+
+So now we r going to see DAX functions--
+We have excel funcs like vlookup, right, left, concat, sum average,etc
+In power bi the lang that we use is DAX. U can open DAX ppt.
+
+Using DAX we can create 2 things-- 1. calculated measures, 2nd calculated columns.
+
+In new measure is created then,
+syntax is--
+Measure_name- DAXFunction('Table_name'[Column_name]
+and for new col--Column_name=Table_name[Column_Name]
+
+Text is written in double quotes.
+
+New measure lets say Total Price-- then it will be like--
+eg---
+Total Price=SUM('Car details'[Price])
+
+for col-- 
+Total Sales = price-discount then we will write like--
+
+TotalSales = 'Car details'[Price]-'Car details'[Discount]
+
+Above is the syntax for writing DAX.
+
+So the diffrent calculation types present in 
+DAX funcs are these 2. calculateed measures adn calculated cols.
+
+when we r creating calculated col, it is visible in table.
+but when we create a measure, it is not visible,
+bcoz we get single value as o/p in measure.
+for eg if 10,20,30,40 are the values and we add them,
+then we get a single value.
+
+nut in calculated col we get 1 value for each row and so it is visible.
+
+Calculated Column--
+Employee Full Name = Employee[FirstName]&"-"& Employee[LastName]
+here we r concatenating first name and last name by hyphen
+Profit = Sale[SalesAmount]-Sales[CostAmount]
+here we r subtracting values.
+
+Calculated Measure
+TotalSale= Sum(Sale[SalesAmount])
+TotalProfit=Sum(SAle[SalesAmount])-Sum(Sales[CostAmount])
+
+Measures are visible in data tab but not in visible.
+
+Now to create measure--> u can goto modelling tab-->
+here u have option new measure, new column.
+
+Another way is goto table view---> select the table from right
+-->lets say i want to create a measure sum of selling price-->
+from here also we can create new measure and new col.
+
+So from table view--> car details v3--> new measure-->
+
+Total Price = SUM('Car details v3'[selling_price])
+in the data tab-- calculator sugn appears. this is measures.
+
+Next calculated col--
+new col--
+
+Price Per Seats = 'Car details v3'[selling_price]/'Car details v3'[seats]
+
+Here new col is added in table. Summation sign.
+
+Now go to report view-- visualization tab-->card visual-->
+drag and drop Total Price. U can even put in fields.
+
+if i edit measure to Total Price = SUM('Car details v3'[seats])
+then my visualization will aslso change.
+
+Now, new measure-- 
+Minimum Price = MIN('Car details v3'[selling_price])
+
+report view--> card visual--> fields--> Minimum Price.
+
+Now difference between Min And MinA.
+
+Minimum Fuel = MIN('Car details v3'[fuel])
+report view--> card--> minimum fuel
+C is the min value so CNG.
+
+What if we have logical or boolean values. 
+like true, false then min will not help, instead MINA will help.
+It converts true into 1 and false into 0 in  the backend,
+now 0 in min, so ) will be o/p In real life we donot use it much.
+
+From min we can find the minimum of only number/text.
+
+Now MINX--
+i.e. d/b min and minx, sum and sumx, max and maxx, average and averagex
+
+in minx we first write table name on which we want to apply then write expression.
+So X here is expression, so we r trying to find min value of an expression.
+
+So, min considers all the values and give 1 single o/p.
+but minx considers each and every row of the epression,
+and then on the basis of that it gives final o/p.
+
+for eg i have 2 cols--
+km and Ltrs i.e. how muckh km it ran and how much 
+litrs it consumed..
+
+km,ltrs
+100,5
+200,10
+50,2
+1000,50
+500,15
+
+now in min(km)= 50
+lly, min(liters)=2
+
+but wahat if i want to find min of these 2 cols multiplication.
+Now bcoz we cant write 2 cols inside min,
+ we will use minx--
+Minx(Cardetails,[km]*[liters])
+so we have row by row multiplication as--
+100,5= 500
+200,10=2000
+50,2=100
+1000,50=50000
+500,15=7500
+now we will get 100 as o/p.
+
+but whatif we pass only 1 col then it works same as min.
+
+car details v3--
+new measure-->
+Minimum Seats and Price = MINX('Car details v3','Car details v3'[selling_price]*'Car details v3'[seats])
+
+Now gioing to card visuals to see these values--
+new card visual--> put min seats and price.
+
+Now lets say i want to find max of selling price - km driven.
+
+1 way is to add a new col, and 
+
+Price_km = 'Car details v3'[selling_price]-'Car details v3'[km_driven]
+then we will find max of this col.i.e.
+new measure--> max_price_km = MAX('Car details v3'[Price_km])
+this will give us 1 value.
+
+now creating another  measure using maxx--
+
+max_price_km_with_x = MAXX('Car details v3','Car details v3'[selling_price]-'Car details v3'[km_driven])
+
+report view-- card --> max_price_km
+report view-- card --> max_price_km_with_x
+
+Sum--
+new measure--Total_Seats = SUM('Car details v3'[seats])
+
+card visual== total seats
+
+new measure -- car supply-- sum of sales / quantity.
+i.e. total sales per quantiyt.
+
+total_sales_per_each_quantity= SUMX('Car_SupplyChainManagement',Car_SupplyChainManagement[Sales]/Car_SupplyChainManagement[Quantity])
+
+see in the card visual.
+SAme goes for avg and avgx.
+
+Count functions--
+
+fuel type-- number of items in this func.
+Count gives count of all rows except blank rows.
+and give single o/p.
+
+Distinct count gives unique count-
+
+See car details v3--> fuel--> in dropdown we can see 4 
+values. this is distinct count
+but count will give how many times each category is coming.
+
+new measure--
+count_of_fuel = COUNT('Car details v3'[fuel])
+
+new measure--
+Unique_fuel = DISTINCTCOUNT('Car details v3'[fuel])
+
+add card visuals to see both.
+
+count is giving all the rows except blank.
+
+CountA and count behaves similar.
+count rows similar to count only, ignores blank.
+countblank counts blank rows.
+
+New measure--
+count_blank = COUNTBLANK('Car details v3'[max_power])
+card visual
+
+Now other basic DAX functions--
+calendar- creates new table for dates.
+calendar takes start date and end date
+which we will get using another dax func,
+where date dax func takes values in year,month,day.
+o/p of date depends on power bi settings.
+
+so click new table-->
+calendar_table = CALENDAR(DATE(2022,2,1),DATE(2024,2,1))
+
+so the o/p pf date includes time also.
+If u dont want, select col--format--> short date
+
+new measure-- date_time = Hour(Now())-- put in a card visual.
+
+then absolute-- abs() and power()
+
+now coming to if-- car details v3--
+new column tools-->
+manual_condition = IF('Car details v3'[transmission]="Manual","ITV","It is Automatic")
+
+Now inside if we can have and and or.
+
+new measure--
+condition_new = IF(AND(10>9,2<3),"Correct","Wrong")
+card visual.
+
+if we will change 10<9 then o/p will cahnge to wrong.
+lly, we can change and to or, and seee the o/p in card visual.
+
+lly, we have iferror(25/0,"NA",25)
+
+condition_new = IFERROR(25/0,"Division error")
+do 25/1 then o/p will change.
+
+so in car sales mgmt--
+Column = IFERROR(Car_SupplyChainManagement[Sales]/Car_SupplyChainManagement[Discount],"NA")
+
+Column = IFERROR(Car_SupplyChainManagement[Sales]/Car_SupplyChainManagement[Discount],0.0)
+
+Concatenate-- concat 2 texts.
+concatenate("First","Name")
+
+Filter-- it returns a filtered table.
+ on table -- new table-- Car_type = FILTER('Car sale',[Vehicle_type]="Car")
+
+for multiple conditions u can add conditions with AND.
+
+Car_type = FILTER('Car sale',[Vehicle_type]="Car" && [Manufacturer]="Dodge")
+
+|| or character.
+
+Calculate DAX function--
+calculate(expression,filter)
+
+Calculate([Sales Amount],'Product'[Color] IN {"Red","Blue"})
+
+New measure--
+Car_type_1 = CALCULATE(SUM('Car sale'[Fuel_capacity]), FILTER('Car sale',[Vehicle_type]="Car" && [Manufacturer]="Dodge"))
+
+
+Charts in power bi--
+
+Visualizations--> build visual and Format Page
+In page information u can change name of page.
+Below taht there is a canvas settings.
+U can change this to 16:9 or 4:3, to get more 
+space in canvas, so that u can add extra charts
+and features in ur canvas.
+
+in bar chart bars are in horizontal position,
+in col vertical direction.
+
+2 types of bar/col charts-- stacked i.e. one above another,
+and clustered together.
+
+Same with bar chart.
+
+1. Stacked bar chart--
+car supply chain mgmt--
+y axis- gender, x axis- sum of sales, legend--car colour
+
+same options we will put in clustered bar chart--
+y axis- gender, x axis-- gender, legend car color.
+if we will put car color in small multiples instead of legend,
+-- multiple charts gets created for each category.
+
+Same col chart and stacked col chart.
+
+drop col chart-- gender x-axis, sales-y axis, legend - car color.
+
+lly, clustered col chart.
+
+tooltip.Now without hover if i want values,
+then, clcik on the chart-- properties--> data labels on.
+see options also.title on /off,
+values that u want to show,
+color transparency.
+Under yaxis--> title--> change it-->gender
+
+Next is line chart and area chart--
+line chart gives trends so its best with dates,
+profit, sales, etc.
+So new page--
+car supply chain--> x axis-order date-->
+y-axis--sales, secondary y-axis-- car price
+remove year quarter month or u can do drill down i.e.
+double down arrow and drill up.
+with single arrow , it will drilldown on particular data point.
+
+area chart--
+x-axis order date
+y-axis sales
+secondry y-axis car price
+
+plot any 1 of them not both of them.
+
+Combo chart--
+x axis-- gender
+y axis-- sales
+line-- quantity
+
+next is pie chart--
+legend -- gender
+values-- sum of sales.
+
+now in the legend put car color-- its cluttered.
+
+pie chart can be converted to donut chart.
+
+
+then map visuals--
+for tehm there should be a col which has states country and city should be there.
+
+new page-- map visual--stretch to half
+then put filled map too.
+
+1st map-- location - state
+bubble size are same. We want to show sales in the form of bubbles.
+So, put sales into bubble size.
+
+Do same thing in filled map-- available stes are filled.
+South dakota is not there so not filled.
+
+Next is kpi visual-- key performance index
+
+3 kpis are gauge, kpi and card visual.
+
+new page--
+gauge-- value sales,
+now in format your visual option--gauge axis--
+give min and max--
+so, min=0, max=2billion, target =1billion
+sales less than target.
+
+U can change colors.
+fill color - red
+target color- red
+If we want target se zyada hai to green color then, fillcolor fx--format style rules-->
+min in max 1billion then color red
+then new rule-- in min 1 billion <max then green color.
+
+card visulal--
+sum of sales, from the dropdown u can select average lly, min max
+
+lly in line charts also u can change.
+
+then kpi -- 1st create a line chart--x-axis put date keep only month 
+y-axis-- sales keep the visual selected and then select kpi.
+target 
+lets say in formula bar , write-- New_value=200billion
+put new value into target.
+
+Now creating dashboard--
+change size of canvas-- format page--
+canvas settings-- type custom
+height--100px,
+width 1500 px
+
+copy some charts into dashboard and
+
+then insert or in home tab u have text box option.
+
+Write the title of this dashboard inside this text box.
+
+Car Sales Dashboard-- bring it in the center.
+pie,column,line,bubble map,
+gauge and card visual.
+
+now adding slicer--
+click on slicer visual-- gender, add another slicer-- transmission
+
+Now in model view, car sale and car supply chain are joined using car maker and car manufacturer,
+but car details is not joined with car sale or car supply.
+Gender is in car supply
+and transmission in car details.
+
+Next is power q & a--
+bar chart between gender and sales
+Click on turn this Q&A into visual.
+
+Page navigation--
+got o insert tab-- buttons--right arrow- or u can even put right arrow shape.
+so right arrow sahpe.
+Now what i want is if someone will click on this map visual toh we goon on map visual.
+-- select right arrow-- action on-- type-page navigation
+--> destination-- select map visuals.
+so to run this press ctrl key and click on right visual.
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
