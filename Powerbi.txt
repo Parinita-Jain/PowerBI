@@ -1123,7 +1123,8 @@ Next custom cols--car sale-->new col name--> sales per price--> double click sal
 
 next is invoke custom func--> here u can write ur 
 own custom func and apply it on ur own col-->
-So before using this functionality u will write some func--> so right click on query tab--> new query--> blank query--> = (sales as number,price as number) => sales+price
+So before using this functionality u will write some func--> so right click on query tab--> 
+new query--> blank query--> = (sales as number,price as number) => sales+price
 
 now our func is created--> now click car sale-->
 invoke custom func-->new col name--> addition-->query1--> here u can give col or a particular value-->put 10, 20--> so our o/pis 30.
@@ -1188,7 +1189,7 @@ If u dont want to load everything then right click on name in query editor-->
 untick enable load option. And that will not be loaded in 
 power bi desktop.
 
-So now we r going to see DAX functions--
+OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO -- So now we r going to see DAX functions--OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
 We have excel funcs like vlookup, right, left, concat, sum average,etc
 In power bi the lang that we use is DAX. U can open DAX ppt.
 
@@ -1443,6 +1444,7 @@ New measure--
 Car_type_1 = CALCULATE(SUM('Car sale'[Fuel_capacity]), FILTER('Car sale',[Vehicle_type]="Car" && [Manufacturer]="Dodge"))
 
 
+
 Charts in power bi--
 
 Visualizations--> build visual and Format Page
@@ -1596,7 +1598,9 @@ so to run this press ctrl key and click on right visual.
 
 
 
- 
+
+
+
 
 
 
