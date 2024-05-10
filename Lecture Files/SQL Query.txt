@@ -1,0 +1,7 @@
+select EnglishProductName, ListPrice
+from DimProduct
+where EnglishProductName = 'Road-250 Red, 58';
+
+update DimProduct
+set ListPrice = 4000
+where EnglishProductName = 'Road-250 Red, 58';
