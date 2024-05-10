@@ -1594,6 +1594,356 @@ Now what i want is if someone will click on this map visual toh we goon on map v
 so to run this press ctrl key and click on right visual.
 
 
+#--------------------------------------- POWER BI EK MA"AM__________________________________________________________________
+
+1. load Employee_Records.xlsx ----- load there are null values.
+
+data view-- transform data means iam going to use query editor to correct prepare and transform my data.
+
+click transform data-- power query editor opens.-- here u can see the preview of ur data on central pan.
+
+in the home tab-- query-- click adv editor-- u can see some programming steps added. Whatever steps i apply
+on my query editor, a background programming step is added there. And the progr lang used is M lang.
+In query settings , we can see some steps are already applied.
+
+Now power bi editor has undo button but power query editor doesnot have any undo button.
+
+Check the datatype of each col.
+
+Gender-- empty 4%--- replacing null with others- lly, salary -- null - 0, Department-- NULL-- Training
+
+Creating new col from start date-- and extract month and year from start-date col.-- add col-- from date and time-- date-- year. col added
+lly, month-- name of month .
+
+now lets say i want to delete start date col-- so right click on col name-- remove col.
+
+then from location col i want only contry name-- home-- split col by deleimiter , --but its not like location has only 1 col.
+So, add col-- col from eg --from selection -- col name countyr-- USA, NZ, make els USA.
+remove location col.
+
+then tell about apply--apply. Then from pwer query--home new source--sales data file.xlsx-- open
+
+now this table is unorganized, we will organize it.
+
+applied steps delete--changed type and promoted header. I want my data as it is.
+
+Now we want to remove null values, but keep date values.
+
+In date if u will see, after : , date values are there. So in this case u can use delimiter to extract date value.
+So click col1, home-- split col--delimiter--instead of space give colon,ok
+now this col has date and null, date and null so we will do flash fill.
+So,right click on col-- fill--down.
+
+then from name and emp id, i want name in 1 col and empid in diff col, so click on 1st col--split col--delimiter--custom--(--ok
+but the data is not yet clen, bcoz with empid u r getting ) closing bracket. So,replace value--) with nothing.
+
+Now in col1 , with names unnecessary spaces are added, so right click col name-- transform--trim.
+
+Now lets suppose i dont want sales for, sales person row and total row, and null rows. So on col name, right click-- filter-- deselect these 4.
+
+So now rename cols-- SalesPersonName,SalesPersonID,Sale Date,North,East,South,West.
+
+Now these north,east,south,west col values , u want to convert them into rows-- 
+when we convert from roe to col its pivoting, and when col to row its unpivoting.
+For analysis it will be better if i have region data in 1 single col.
+So select NEWS for that select N press shift key and select last col-- transform tab-- unpivot cols.
+Change col values to Region and Sales Amount
+
+close and apply.save
+
+--
+
+
+Now combining data by combining files, merging(joins of sql) and append(union operation).
+
+now to get data as folder-- source-- more--folder-- connect-- select csv folder-- combine dropdown--combine and load-- ok
+
+cliack on csv folder-- months from dec ,july etc are added.
+
+now delete this csv folder and once again get the folder--combine nad transform takes us to power query editor.
+
+in th applied steps u can see the steps added.--
+now i will do cleaning--click col1 filter-- deselect null records,company,created by, date,report.
+
+now, lets say from source col i only want month part--split col--space--ok
+source name 2-- remove col
+Rename cols-- Month Name,Date , Country,Units,Revenue,
+datatype-- unita nad revenue-- decimal number , Dtae col -date, 
+
+-- close and apply
+
+get data-- Students and Cources--tick all 3 --now  appending has same col names-- and rows are appended 1 after another.
+
+now see year 11 and year 12--so, year 11- use 1st row as header, year 12-- use 1st row as header.
+
+now we will append year 11 and year 12.
+
+choice is urs, u want to combine year 11 on year 12 or year 12 on year 11.
+
+click year 11-- append query-- append query as new-- year11 and 2nd table year 12-- ok--
+
+Now click cources-- based on cource i want to see who is a teacher and everything So for this merge--
+so click append1-- merge-- cources -- from both table highlight-- cource col-- inner join--ok
+now clickon expand sign on cources-- untick course, untck use original col as prefix---- ok
+
+Now applying diff transformations-- like i want to know how many students are there in aquamarine?
+in the CSV table that we have i want to know what is brazil revenue,or columbia revenue..
+
+Now we can apply the transformations on original data or on duplicate of these queries.
+csv-- copy-- so if i will do any changes on duplicate then there will be no change in original but in case of refernce,
+any changes will be applied on original alos. 
+
+Append1--view tab-- data profiling--formula bar, show whitesapce,col quality,col distribution,col profile
+
+Now rename append1 query to StudentCourse.--right click reference--trnasform tab-- group by-- how many students are there in a cource--
+so --Course-- Count-- count rows-- ok
+
+Now lets say if u dont want course wise, u want gender wise, then cross grouped rows from applied steps-- transf-- grp by-- gender- count--ok
+lly for assessment type.
+
+lly in csv(2)--group by -- month-- New col name-- Total Units-- op Sum--cols units.
+Now lets suppose, while performing this grouping, I also want to know what is the min, max, avg for each month.
+so 1st cancel grouped rows from applied steps--group by-- advanced--
+MonthName
+total, sum, units
+avg, avg, units
+total reve,sum , revenue
+avg reverncue, avg,revenue
+-- ok
+
+Now x grped rows from appied steps--
+now lets say 1st grouping u want to do on months, 2nd on country,
+month name click add grouping countyr
+count,countrows,
+TotalRevenue,Sum,Revenue
+
+Now goto home tab-- get data--excel workbook--chapter 3-- product.xlsx-- data 11-- renmae query to Product.
+
+explore add col-- col from selection -- select first name and last name-- full name
+
+col from selection-- select Price-- New col nmae--Price range-- lets say we want a range of 50-100-- so write 50-100--ok 
+
+Custom col--TotalPrice=[Quantity]*[Price]*[Commission]--ok
+
+custom col-- totalPriceWithoutComm=[Quantity]*[Price]--ok
+
+Now i want to create a new col based on condiotions applied on totalPriceWithoutComm,so,
+PriceRating
+totalPriceWithoutComm,<=,3000,High
+totalPriceWithoutComm,<=,2000,Moderate
+totalPriceWithoutComm,<=,1000,Low
+else 
+low -- ok
+
+lly, u can duplicvate col--
+index col-- show eg.
+
+
+--Now-- query aparameter--- using query param we will create custom functions.
+Now we can do the filteration by clicking on col name like in Product query--item--
+we each selection, step is getting added in applied steps.
+So instead of selewcting values via filteration, we will aplly a parameter.
+
+Now parameter is a way to easily store a value.And then later u can use this value for filteration, calculation, etc.
+So parameters gives us flexibility to dynamixcally change the value based on inpiut value.
+So we can use parameters for filteration, calculation or giving values to a custom function.
+
+
+Product.xlsx--data11--transform data--rename data 11 to Product-- 
+now click price-- click on filter next to col name-- number filter-- gt than-- 100
+and now, 
+
+create new parameters--
+PriceValue--type--decimal number---Suggested value--Any--Current Value--100.
+
+Now aftercreating parameter, click on price--number filter-- gt than-- a smll baox is ther--clcik and select parameter--PriceValue--ok
+
+Creating a new parameter for a range-- manage parameter-- HighValue, Decimal-- 10--ok
+
+Creating a new parameter for a range-- manage parameter-- LowValue, Decimal-- 5--ok
+
+
+
+Now click quantiy-- clear filter--apply between--
+is >= low value
+is <= high value -- ok
+
+Now clcik on HighValue parameter change value to 15 and see in table.
+
+now in query pane-- right click on empty space-- create new parameter-- Hike-- decimal--0.05--ok
+
+custome col==> HikedPrice=[Price]*Hike
+
+now u can simply click hike , change value there--
+
+now creating a duplicate of Product--delete all the steps keep top3
+new parameter-- ItemValue--text--Printer-- ok
+Now clikc items--filter- text filter--equals--ItemValue--ok
+
+lly, change value to White Board. 
+
+Now bcoz Item contains categorical values- we can create list parameters--
+So, click on itemName-- manage Parameters--Suggested values--list-- Printer,White Board,Projector,Diary,Office Chair-- 
+default value-- Printer-- Current Value--Printer--ok
+
+now, custom func is a query,that will be executed by another query.
+In case of any change in custom func, that will be applied in other queries alos.
+
+now in browser-- in url--search nz public holidays 2020
+
+https://publicholiday.co.nz/nz-public-holidays-2019.html
+
+now if u will change iyear in url , the data is also changing.
+
+so, home-- get data-- url--https://publicholiday.co.nz/nz-public-holidays-2020.html--ok
+
+table1-- ok-- now remove 1st col.-- use 1st row as header--new parameter-- Year, text,current value 2019,
+Rename table1 to Holidays-- now create custom col-- Year -- = Year-- ok
+
+Now we will do web scraping based on the value of parameter-- Year.
+So table holidays-- applied steps-- Source settings-- the dialog box will open--advanced-- so now
+we are going to do url parameterization--  https://publicholiday.co.nz/nz-public-holidays-
+add part-- parameter--Year
+add part-- .html
+
+URL preview is like- https://publicholiday.co.nz/nz-public-holidays-{Year}.html --- ok
+
+now if we will chnage parameter value to 2022-- table data will cahnge
+
+Now we will convert this query into function-- so right click on query Holidays--create function--GetHolidays- ok
+Now as the function is created a diff folder is created and func is put into that.
+Now the values like 2019,2020,etc whatever values we will give to this func, we will create a generator.
+So now we will create value generator.-- so go to new source tab of home-- select blank query--
+in the formul abr type this formula-- = List.Numbers(2019,6)
+now u can see list tools--  transform -- to table--ok
+next change this tables col datatype to text--
+now we will execute this function- so -- add col-- invoke func-- i want to give table values input to year parameter--
+so, GetHolidays--GetHolidays-- Year-column1-- ok--ok
+
+Now expand this table--uncheck year and use--ok
+U can remove 1st col now.
+
+Now, next is editing this function--We will bne editing the main query, and the change will be reflected,
+in the table where the function created on the main query is used.
+Now our main query is Holidays. SO in the Holidays of mnew folder--datew--split colu by delimiter comma,
+--ok Rename-- MOnth,
+then from date2 we only want numbers-- so add col-- col from eg-- 1, 2-- Rename as Day.
+now remove day2.
+
+Now all these changes i am doning in main query. Now go to query 1--expand it again and u will see all values coming.
+
+if chnages we r making are not reflecting then cancel steps till expandquery in query1 and expand again.
+
+Apply changes .
+
+now-- car sales.xlsx-- Select down 6---load
+
+We r gettting our data in relational schema, we will convert it to get star schema.
+
+fact tables in middle-- dim tables on side.
+
+u can remove other tables.
+
+Create duplicate of Stock table-- rename  it as DimVehicle.
+
+Now click dim vehicle-- merge-- select colors-- click on colorid both table--now ehile expanding only color.
+
+now select make col press ctrl--model ,vehicle type,color -- in the remove col-- remove others
+next select all cols-- remove duplicates.
+
+add col-- index col--1-- rename as VehicleSK
+
+Now create duplicate of Client-- select client name,clent type client size is credit worthy is dealer-- remove orther cols.
+remove duplicates.
+index col-- 1-- clientsk
+
+Now from country's table we will only get country name.
+Region and town are info of client table.
+So creating duplicate of Client's table -- DimGeography--keep town region countryID-- remove others--
+now countryid from dimgeograohy table we will merge it with countries table to get country name--
+so merge queries--dimgeograohy--countries--click country id-- inner join -- ok-- expand-- keep country name--
+now remove country id-- remove duplicates-- add index col 1--GeographySK
+
+Now we will create duplicate of InvoiceLine table--FactSales--now with stock id we will link with stock table
+Sp click FactSales-- home--merge--stock--stockid--inner join--ok
+i want make.,model,colorid,vehivltype,cost prm,spareparts,mileage,laborcost--ok
+
+Now what i want is a color not color id-- so merge-- factsales-- colors--colorid--inner--ok-- select color
+
+Now we can bring vehicklesk--FactSales--merge--dimvehicle--now press ctrl key and select from dimVehicle make model vehicletype color--
+now in this same seq select cols from fas=ctSAles--inner--ok--vehiclesk--
+
+now select make model color id vehicletype color stockid--remove cols--
+
+Now we will merge factsales-- invoice--invoiceid--inner--ok--client is, invoice date--
+
+now using client id we will merge with client table--client id-- inner--ok--client name town ,region,countyreid,
+clienttype,clientsize,iscreditworthy,isdealer--ok
+
+FactSAles-- merge--DimClient--ctrl iscreditworthy,isdealer,clientsize,client type,clienttype,client name--inner--ok--clientsk--
+
+FactSAles-- merge--countries--countryid--onner--ok--country name--ok
+
+Next we will bring geographysk--
+
+
+FactSAles-- merge--dimGeography--town region country name-- inner--ok--GeographySK
+
+Now from FactSales keep-sales price,cost price,spareparts,labourcost,vehickesk,geogrphicalsk,clientsk,invoice date,netmargin.
+
+Now we only need all the dims and Facts--other tables we will hide in pbi desktop--close and apply
+
+Now 1 more table datedim is there which we will make in pbidesktop.--- close and apply
+
+Now only keep dim and fact table -- del rest.
+
+Now goto FactSales--from 1st jan 2012 to 31st dec 2015 i want a table which has these dates.
+For DateDimension.
+
+For this we will use DAX function--
+DAX functions can help u create-- calculated table,calculated col, calculated measure.
+
+SO table toolls-- new table-- DimDate = CALENDAR("1/1/2012","31/12/2016")
+
+now add new col-- FullYear = YEAR(DimDate[Date])
+
+new col-->MonthNumber = MONTH(DimDate[Date])
+
+new col-->FullMOnth = FORMAT(DimDate[Date],"MMMM")
+
+Now click on FullMonth-- col tools-->sort by-->Month Number (so now instead of getting
+sorted by abcd, it will be sorted by month number.)
+
+new col-- Quarter = QUARTER(DimDate[Date])
+
+done-- 
+now model view-- drop date col on invoice date--
+
+report view-- x- full month-- y -- sales price--
+
+U can also create a hierarchy-- year-- month--quarter--
+so lets create hierarchy-- dimvehicle-- model--right click--create hierarchy--
+rename vehicle hierarchy--now right click make-- add to hier--color add to hier
+
+Now -- col chart-- x-axis-vehi hie y-axis--sales.
+
+Now student details file--
+
+1-1, 1-many,many-many relationship cardinality.
+
+Now see city relationship file--top 3--load
+
+city and manager has 1 to 1 relationship.
+now drop city on city names-- i to many.
+
+we will transform-- in model view many-to-many
+
+19--03-- completed.
+
+
+
+
+
 
 
 
