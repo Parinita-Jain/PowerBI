@@ -1,0 +1,33 @@
+To work with python in power bi desktop
+1. Install Python
+2. Install python packages
+	-pandas ===> DataFrame --> 2D data structure (table)
+	-matplotlib ===> Create the visual
+3. In Command Prompt,
+	pip install pandas
+	pip install matplotlib
+
+There are two things we can do with the python in Power BI.
+I. We can get the data in the form of DataFrame of the pandas library and then can apply the PowerBI visuals no it.
+
+1. Enable Python Script
+	File>Options and Settings>Options>Python Scripting
+	Ensure the path of the python location
+2. Run Python Script and get the data
+	-Get Data
+	-More
+	-Search python, select Python Script
+	-Add the code
+	import pandas as pd
+	data = [['Harry',45],['Mike',67],['Ron',34]]
+	df = pd.DataFrame(data,columns=['Name','Marks'],dtype=float)
+
+II. We can create the python visual in Power BI using matplotlib library
+1. Click on Python Visual (Py icon)
+2. Enable the python script visual, click Enable
+3. Drag the fields from the table in the values area of the visual
+4. Add the script in the Python script editor
+import matplotlib.pyplot as plt 
+dataset.plot(kind='bar',x='Fname',y='Age') 
+plt.show() 
+5. Run the script
