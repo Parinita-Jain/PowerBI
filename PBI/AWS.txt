@@ -1,0 +1,256 @@
+Pay as u go-- no upfront commitment.
+U always go for on demand, No fixd cost.
+
+Which service provides elasticity in AWS and how--
+1. load balancing- it distributes the trafic to available
+instances.
+2.ASG - auto scaling group-- scale out no. of instances on demand.
+
+Cost optimization tools--
+AWS cost explore, Trusted advisor along with
+cost recommendation also recommends on performance and security.
+i.e. cost, performance and security.
+
+Free tier account-- once free tier expires, the subscription model transitions to 
+pay as u go.
+
+reserved instances(RIs)-- allows to commit to 1 or 3 year term.
+Huge discounts are given n EC2 instances cost. 
+It gives min 40% , max 80%.
+RIs are ideal for workloads with predictable usage pattern.
+
+Spot instances--
+This allows u to bid on spare AWS computing capacity,
+often at a much lower price than on-demand instances.
+
+They are great for workloads that can tolerate interruptions 
+and are highly cost effective.
+Dont put ur critical applicatons on this.
+
+Cost allocation tags-- u can use these to categorize and track ur
+AWS resource costs by project, dept or team.
+This helps in cost attribution and budgeting.
+
+they are used compulsorily . This is done during the time
+of resource creation.
+project wise, dept wise,  user vise, u can tag any.
+
+
+Trusted advisor
+
+TCO calculator-- total cost of Ownership-- it is a tool that helps u compare the cost
+of running ur applications on AWS vs on premises environment.
+It assists in making informed decisions about cost benefits
+of migrating to cloud.
+It is very imp for auditing purpose.
+Its free service.
+
+resource decommisioning--bringing down instances which are no longer used.
+This agility helps organization avoid unnecessary spending.
+
+Processes and Services for cost efectiveness--
+Pricing calc, EC2 reserved instances and saving plans,
+aws budgets, Cost explorer, Trusted Advisor.
+
+Savings plan it shouls be annual or 3 year plans and based
+on that it gives pricing.
+
+More processes and services to manage cost--
+Auto Scaling, aws LAMBDA-- SERVERLESS COMPUTING, S3 LIFECYCLE POLICIES,
+eLASTIC LOAD BALANCING, cLOUDFRONT IS A GLOBAL cONTENT DELIVERY
+N/W THAT SECURELY DELIVERS DATA, VIDEOS, APPLICATIONS, AND apiS
+TO CUSTOMERS GLOBALLY WITH LOW LATENCY AND HIGH TRANSFER SPEEDS ALL WITHIN A DEVELOPER
+friendly environmnet.
+
+NIST def-- National Institue of Standards and Technology
+computing resources-- n/ws, servers. storage, appps,services
+
+Rapid Elastiscity-- this is nothing but scalability.
+AutoScaingGroups  use horizontal scaling.
+
+Assignment-- what do u mean by a 3 tier architecture
+wrt  to web applications.
+
+Broad N/w Access-- Thin or thick client platforms--
+eg chrome books thin client something which is not a tradition 
+cloud computing devices.
+
+Seamless migration-- very least or nill configuration change.
+and it becomes virtualized that means u get compatibility.
+
+Resource Pooling--
+includes storage, processing, memory and n/w bandwidth--
+economies of scale wher we have multi tenant option.
+
+1 resource is accessed by multiple people.
+
+Measured Service-- every service that is built on cloud has got its own unit of measurement.
+This provides transparency.
+
+Billing depends on types of service model we use--
+IAAS, PAAS and SAAS.These r cloud service moels defined in NIST.
+
+A cust might be using one or all from loud service provider.
+
+Service models--
+
+AWS fits in IAAS and Paas
+Azure hass saas for some serviec only.
+
+Majority of service providers gives saas,
+then lesser pass then least iaas.
+
+GMail we r simply using it. We donot have any control.
+This is saas model. The control is in service provider.
+
+Understanding service model with the help of data center stack--
+
+data
+applications
+os
+hypervisor
+compute
+storage
+n/w
+facility
+
+we have 2 users-- customer and provider.
+
+on - premise all customer
+
+colo--  provider gives facility and n/w and cus from n/w to last
+
+IAAS-- u start crateing os,  so bit of os to up customer
+
+PAAS-- here u dont have control over os.
+eg microsoft visual studio online.
+here microsoft has given me platform to create application.
+The only control is interface to use this application.
+
+We donot know about os.
+generation or creation of content is paas.
+
+pip gives seperate envi wher u do ur stuff.
+Sandbox is custom envi given by any cloud service provider .--PAAS
+
+IAAs--
+if u r able to create virtual m/c -- that means u r using IAAS.
+
+Gartner IAAS magic Quadrant-
+
+IAAS flavours-- 3 ways to create vms--
+1. vm on shared physical server
+2. on dedicated physical server
+3. dedicated on bare-metal physical servers.
+customers can mix and match bet 3 types.
+
+3rd option is not available from AWS.
+
+shared vs dedicated--
+shared--on 1 physical server many vms are there.
+dedicated--entire physical server is for 1 customer.
+eg--dedicated eg banking sectors, the issue comes with
+compliance. for eg services can be shared in same vms.
+
+vm on shared physical servers drawback--it has least amount of options regarding
+how many cpus, ram and storage.i.e. configuration is limited.
+or u can use auto scaling.
+
+vms on dedicated physical servers--
+u need to sign 1 or 3 year min length contract.
+
+baremetal--
+A hypervisor is not installed and manged by cloud provider.
+The cust cn install an os, directly on server or install
+and manage their hypervisor.Clouds purpose is 
+to reduce manual cost, but here we need man to
+install hypervisor  A cust can acccess their physical servers.
+
+Firewall-- its a service . Firewallls are devices also like routers.
+firewall can monitor all the traffic and it can 
+alllow/deny the traffic. Actual firewall in on premise.
+
+Storage
+
+Manaement options to manage cloud-- get rdp,cli of aws,
+also u can use apis or sdk.
+SDK are generally used with ide platforms.
+
+IAAS billing-- monthly basis,  eg AWS EC2.
+
+Assignment DigitalOcean gives Iaas or paas or saas?
+
+Creating IAAS is similar to creating on premise.
+
+3 tier architecture-- presentation layer, application or logic layer and db layer.
+
+presentation layer is also called as front end layer.
+
+Services such as load balancers and cdn can be used to distribute incoming traffic and improvise user experience.
+
+so lb for presentation layer, 
+application layer--middleware-- 100% people use autoscaling. Alot of load is there.
+U can even use internal load balancers to create application layer.
+DB layer-- No connection from presentation layer to 
+db layer. U can deploy is in a clustered format.
+DB are always installed as clusters. Additional things like data encryption, strict access 
+controls needs to be considered.
+
+Adv of 3 tier archit--
+Scalability, flexibility, security, cost effectivenes..
+
+Front end web server is generally for authentication.
+
+3 tier architecture diagram--
+
+Server farm-- if a particular application
+is hosted on multiple server m.cs then it is called as 
+web farm.
+internet-->Global load balancer gives to firewall
+--> hits load bal and distributes the traffic by 
+ROund robin method-->web server--> firewall-->hits application lb-->
+mgmt access over Internet vpn or direct connection.
+then again db firewall--> db server here ther is no lb because db servers
+are configured in clusters with a shared disk model..
+
+Back up
+Disaster Recovery - Recovery point object,
+recovery time object.
+
+When u do backup., there is a back uppolicy,
+RPO is days . Least RPO is best 
+Recovery time objective-- how much time it will
+take to restore back the lost data.
+
+Cloud gives RPO and RTO as 0 secs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
